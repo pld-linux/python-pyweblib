@@ -8,8 +8,6 @@ License:	GPL
 Source0:	http://www.stroeder.com/pylib/PyWebLib/download/%{module}-%{version}.tar.gz
 URL:		http://www.stroeder.com/pylib/PyWebLib/
 Group:		Development/Languages/Python
-Group(de):	Entwicklung/Sprachen/Python
-Group(pl):	Programowanie/Jêzyki/Python
 Requires:	python >= 2.0
 BuildRequires:	python-devel >= 2.0
 BuildArch:	noarch
