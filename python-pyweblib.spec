@@ -4,7 +4,7 @@ Summary:	Yet another web programming framework for Python
 Summary(pl):	Jeszcze jedno ¶rodowisko do programowania WWW dla Pythona
 Name:		python-%{module}
 Version:	1.2.1
-Release:	1
+Release:	2
 License:	GPL
 Source0:	http://www.stroeder.com/pylib/PyWebLib/download/%{module}-%{version}.tar.gz
 # Source0-md5:	b0e29575f672e6a9d2009169b6a22811
@@ -42,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}
 
 %{_bindir}/python -- setup.py install --root=$RPM_BUILD_ROOT
-find $RPM_BUILD_ROOT%{py_sitedir} -name "*.py" | xargs rm
+find $RPM_BUILD_ROOT%{py_sitescriptdir} -name "*.py" | xargs rm
 install cgi-bin/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}
 
 %clean
@@ -51,5 +51,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc doc/CHANGES* htdocs/*
-%{py_sitedir}/*
+%{py_sitescriptdir}/*
 %{_examplesdir}/*
