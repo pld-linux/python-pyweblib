@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.python
 %define module  pyweblib
 Summary:	Yet another web programming framework for Python
 Summary(pl):	Jeszcze jedno ¶rodowisko do programowania WWW dla Pythona
