@@ -7,6 +7,7 @@ Version:	1.2.1
 Release:	1
 License:	GPL
 Source0:	http://www.stroeder.com/pylib/PyWebLib/download/%{module}-%{version}.tar.gz
+# Source0-md5:	b0e29575f672e6a9d2009169b6a22811
 URL:		http://www.stroeder.com/pylib/PyWebLib/
 Group:		Development/Languages/Python
 %pyrequires_eq	python-modules
