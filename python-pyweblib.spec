@@ -2,11 +2,11 @@
 Summary:	Yet another web programming framework for Python
 Summary(pl):	Jeszcze jedno ¶rodowisko do programowania WWW dla Pythona
 Name:		python-%{module}
-Version:	1.3.1
+Version:	1.3.3
 Release:	1
 License:	GPL
 Source0:	http://www.stroeder.com/pylib/PyWebLib/download/%{module}-%{version}.tar.gz
-# Source0-md5:	75ad0dfd2fd9a6f03fcfb363e70c17c7
+# Source0-md5:	755b6d474ea584194afb9c4474df0b2a
 URL:		http://www.stroeder.com/pylib/PyWebLib/
 Group:		Development/Languages/Python
 %pyrequires_eq	python-modules
