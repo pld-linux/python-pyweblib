@@ -16,10 +16,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Web application library:                                                                    
+Web application library:
 pyweblib.forms        class library for handling <FORM> input
-pyweblib.session      server-side web session handling                                    
-pyweblib.helper       misc. stuff useful in CGI-BINs                                           
+pyweblib.session      server-side web session handling
+pyweblib.helper       misc. stuff useful in CGI-BINs
 pyweblib.sslenv       retrieves SSL-related env vars
 pyweblib.httphelper   very basic HTTP functions
 
