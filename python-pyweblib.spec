@@ -1,6 +1,6 @@
 %define		module	pyweblib
 Summary:	Yet another web programming framework for Python
-Summary(pl):	Jeszcze jedno ¶rodowisko do programowania WWW dla Pythona
+Summary(pl.UTF-8):   Jeszcze jedno Å›rodowisko do programowania WWW dla Pythona
 Name:		python-%{module}
 Version:	1.3.3
 Release:	2
@@ -22,12 +22,12 @@ pyweblib.helper		misc. stuff useful in CGI-BINs
 pyweblib.sslenv		retrieves SSL-related env vars
 pyweblib.httphelper	very basic HTTP functions
 
-%description -l pl
+%description -l pl.UTF-8
 Biblioteka aplikacji WWW:
-pyweblib.forms		biblioteka klas do obs³ugi wej¶cia <FORM>
-pyweblib.session	obs³uga sesji po stronie serwera WWW
-pyweblib.helper		ró¿ne narzêdzia przydatne w cgi-bin
-pyweblib.sslenv		odczytywanie zmiennych zwi±zanych z SSL
+pyweblib.forms		biblioteka klas do obsÅ‚ugi wejÅ›cia <FORM>
+pyweblib.session	obsÅ‚uga sesji po stronie serwera WWW
+pyweblib.helper		rÃ³Å¼ne narzÄ™dzia przydatne w cgi-bin
+pyweblib.sslenv		odczytywanie zmiennych zwiÄ…zanych z SSL
 pyweblib.httphelper	podstawowe funkcje HTTP
 
 %prep
