@@ -1,6 +1,6 @@
 %define		module	pyweblib
 Summary:	Yet another web programming framework for Python
-Summary(pl.UTF-8):   Jeszcze jedno środowisko do programowania WWW dla Pythona
+Summary(pl.UTF-8):	Jeszcze jedno środowisko do programowania WWW dla Pythona
 Name:		python-%{module}
 Version:	1.3.3
 Release:	2
