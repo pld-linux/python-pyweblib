@@ -11,6 +11,8 @@ URL:		http://www.stroeder.com/pylib/PyWebLib/
 Group:		Development/Languages/Python
 %pyrequires_eq	python-modules
 BuildRequires:	python-devel >= 2.0
+BuildRequires:	python-modules
+BuildRequires:	rpm-pythonprov
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
