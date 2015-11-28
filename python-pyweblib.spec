@@ -36,7 +36,7 @@ pyweblib.httphelper	podstawowe funkcje HTTP
 %setup -q -n %{module}-%{version}
 
 %build
-env CFLAGS="%{rpmcflags}" %{_bindir}/python setup.py build
+env CFLAGS="%{rpmcflags}" %{_bindir}/%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
