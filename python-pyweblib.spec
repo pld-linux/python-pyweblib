@@ -8,6 +8,7 @@ License:	GPL
 Source0:	http://www.stroeder.com/pylib/PyWebLib/download/%{module}-%{version}.tar.gz
 # Source0-md5:	755b6d474ea584194afb9c4474df0b2a
 URL:		http://www.stroeder.com/pylib/PyWebLib/
+BuildRequires:	rpmbuild(macros) >= 1.710
 Group:		Development/Languages/Python
 %pyrequires_eq	python-modules
 BuildRequires:	python-devel >= 2.0
