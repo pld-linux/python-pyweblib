@@ -3,7 +3,7 @@ Summary:	Yet another web programming framework for Python
 Summary(pl.UTF-8):	Jeszcze jedno środowisko do programowania WWW dla Pythona
 Name:		python-%{module}
 Version:	1.3.3
-Release:	5
+Release:	6
 License:	GPL
 Source0:	http://www.stroeder.com/pylib/PyWebLib/download/%{module}-%{version}.tar.gz
 # Source0-md5:	755b6d474ea584194afb9c4474df0b2a
@@ -37,14 +37,15 @@ pyweblib.httphelper	podstawowe funkcje HTTP
 %setup -q -n %{module}-%{version}
 
 %build
-env CFLAGS="%{rpmcflags}" %{_bindir}/%py_build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}
 
-%{_bindir}/python -- setup.py install --root=$RPM_BUILD_ROOT
-find $RPM_BUILD_ROOT%{py_sitescriptdir} -name "*.py" | xargs rm
+%py_install
+%py_postclean
+
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}
 install cgi-bin/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}
 
 %clean
